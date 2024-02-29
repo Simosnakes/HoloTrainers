@@ -14,6 +14,7 @@ Our team is composed of 4 ITIS students from Cuneo, Italy.
 
 ## Marco Masoero
 **Marco Masoero** has contributed in the **C# scripting** and especially in the process of **brainstorming**, because coming up with doable ideas is absolutely crucial, considering the one and a half week deadline.
+The Website: marcomasoero.github.io
 
 ## Karol Bruno
 **Karol Bruno**'s role in the team was converting all of the ideas into code, assigning the **scripts** to the **GameObjects**, and doing research on the coding language **C#**. 
