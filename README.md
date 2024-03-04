@@ -1,6 +1,6 @@
 
 # PCTO2024
-This repository contains all of the code, examples and sketches used during our GameAbility Unity project.
+This repository contains all of the code, examples and sketches used during our GameAbility Unity game HoloTrainer.
 
 
 ## TEAM
