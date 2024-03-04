@@ -89,6 +89,7 @@ Before building to your device, the device must be in Developer Mode and paired 
   9. Connect your HoloLens to your computer, and then in Visual Studio, do one of the following:
 
 To deploy to your HoloLens and automatically start the app without the Visual Studio debugger attached, select Debug > Start Without Debugging.
+
 ![enter image description here](https://learn.microsoft.com/en-us/training/modules/learn-mrtk-tutorials/media/038-start-without-debugging.png)
 To deploy to your HoloLens without having the app start automatically, select Build > Deploy Solution.
 
