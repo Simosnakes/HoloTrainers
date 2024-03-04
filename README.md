@@ -52,12 +52,13 @@ _● Universal Windows Platform (UWP) development_
 _● USB Device Connectivity (required to deploy/debug to HoloLens over USB)_  
 _● C++ (v143) Universal Windows Platform tools_*
 - Click *Install*
-- Now you want to build the project:
-1.  In the menu bar, select  **File**  >  **Build Settings...**.
+
+## Now you want to build the project
+    1.  In the menu bar, select  **File**  >  **Build Settings...**.
     
-2.  In the  **Build Settings**  window, select  **Universal Windows Platform**. If you see a message "No Universal Windows Platform module loaded.", select  **Install with Unity Hub**.
+    2.  In the  **Build Settings**  window, select  **Universal Windows Platform**. If you see a message "No Universal Windows Platform module loaded.", select  **Install with Unity Hub**.
     
-3.  Make sure the following settings are active:
+    3.  Make sure the following settings are active:
     
     **Architecture**: ARM 64-bit
     
@@ -73,27 +74,27 @@ _● C++ (v143) Universal Windows Platform tools_*
     
     **Build configuration**: Release (there are known performance issues with Debug)
     
-4.  Select the  **Switch Platform**  button. Unity displays a progress bar while it switches platforms.
+    4.  Select the  **Switch Platform**  button. Unity displays a progress bar while it switches platforms.
     
-5.  After the switch platform process is finished, click on  **Build** and select an empty directory.
-6. Open that same directory and open *_HoloTrainer.sln*
-7. Configure Visual Studio for Hololens by selecting the **Release** configuration and the **ARM64** architecture
-![enter image description here](https://learn.microsoft.com/en-us/training/modules/learn-mrtk-tutorials/media/037-visual-studio-build-options.png)
+    5.  After the switch platform process is finished, click on  **Build** and select an empty directory.
+    6. Open that same directory and open *_HoloTrainer.sln*
+    7. Configure Visual Studio for Hololens by selecting the **Release** configuration and the **ARM64** architecture
+    ![enter image description here](https://learn.microsoft.com/en-us/training/modules/learn-mrtk-tutorials/media/037-visual-studio-build-options.png)
 
 **NOTE**: If you don't see "Device" as a target option in Visual Studio, you may need to change the startup project for the solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click [your project name](Universal Windows) and then select Set as StartUp Project.
 Before building to your device, the device must be in Developer Mode and paired with your development computer. See the section named "Enabling Developer Mode" on this page.
 
-8. Select the deployment target drop-down and then do one of the following:
-If you're building and deploying via USB, select Device.
-9. Connect your HoloLens to your computer, and then in Visual Studio, do one of the following:
+    8. Select the deployment target drop-down and then do one of the following:
+    If you're building and deploying via USB, select Device.
+    9. Connect your HoloLens to your computer, and then in Visual Studio, do one of the following:
 
 To deploy to your HoloLens and automatically start the app without the Visual Studio debugger attached, select Debug > Start Without Debugging.
 ![enter image description here](https://learn.microsoft.com/en-us/training/modules/learn-mrtk-tutorials/media/038-start-without-debugging.png)
 To deploy to your HoloLens without having the app start automatically, select Build > Deploy Solution.
 
 
-10. Pairing your device
-The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. To create a PIN:
+    10. Pairing your device
+    The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. To create a PIN:
 
 In your HoloLens and your machine, look for developer settings
 Select Pair. This displays the PIN in the HoloLens.
@@ -101,8 +102,8 @@ Enter the PIN in the dialog in Visual Studio.
 After pairing is complete, in the HoloLens, select Done.
 Your PC is now paired with your HoloLens and you can deploy apps automatically. Repeat these steps for every PC that's used to deploy apps to your HoloLens.
 
-11. Running your app on your HoloLens
-After your app finishes building, in the HoloLens Start menu, find your app, and then select it.
+    11. Running your app on your HoloLens
+    After your app finishes building, in the HoloLens Start menu, find your app, and then select it.
 
 # DO IT YOURSELF
 If you want to make a **Unity** Hololens project yourself, follow this tutorial: 
