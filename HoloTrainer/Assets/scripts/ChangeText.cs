@@ -4,11 +4,16 @@ using System.Diagnostics;
 using UnityEngine;
 using TMPro;
 
+/**class for updating and rendering text
+*/
 public class ChangeText : MonoBehaviour
 { 
-    public TextMeshPro textMeshPro;
-    int value;
+    public TextMeshPro textMeshPro;//text attribute
+    int value; //player's score
 
+    /** Start is called once before the first frame
+    * Start checks the existence of the text
+    */
     void Start()
     {
         
@@ -18,10 +23,14 @@ public class ChangeText : MonoBehaviour
         }
         else
         {
+            //update value in case it exists
             value = CollisionDetection.number_target;
             UpdateText(value);
         }
     }
+
+    /** Update is called once per frame
+    */
 
     void Update()
     {
@@ -31,7 +40,8 @@ public class ChangeText : MonoBehaviour
         }
     }
 
-    // Update the text when the variable value changes
+    /** Update the text when the variable value changes
+    */
     void UpdateText(int value)
     {
         if (textMeshPro != null)

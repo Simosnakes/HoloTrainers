@@ -4,11 +4,16 @@ using System.Diagnostics;
 using UnityEngine;
 using TMPro;
 
+/**class for updating and rendering text
+*/
 public class ChangeText2 : MonoBehaviour
 {
-    public TextMeshPro textMeshPro;
-    long value;
+    public TextMeshPro textMeshPro;//text attribute
+    long value;//player's score
 
+    /** Start is called once before the first frame
+    * Start checks the existence of the text
+    */
     void Start()
     {
 
@@ -23,6 +28,8 @@ public class ChangeText2 : MonoBehaviour
         }
     }
 
+    /** Update is called once per frame
+    */
     void Update()
     {
         if (textMeshPro != null && GameObject.Find("Sphere").GetComponent<Renderer>().enabled)
@@ -32,7 +39,8 @@ public class ChangeText2 : MonoBehaviour
         }
     }
 
-    // Update the text when the variable value changes
+    /** Update the text when the variable value changes
+    */
     void UpdateText(long value)
     {
         if (textMeshPro != null)
