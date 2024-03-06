@@ -17,7 +17,7 @@ public class FlashSphere : MonoBehaviour
     private double min_y;
     private double max_x;
     private double max_y; //limits of random
-    private const long TWENTY_SECONDS = 35000L;
+    private const long EXE_TIME = 35000L;
 
     /**Start is called before the first frame update
     *it starts the stopwatches and assigns the random limits
@@ -56,7 +56,7 @@ public class FlashSphere : MonoBehaviour
             gameObject.transform.position = new Vector3(posx, posy, gameObject.transform.position.z);
             entered = false;
         }
-        if (stopwatch1.ElapsedMilliseconds >= TWENTY_SECONDS)
+        if (stopwatch1.ElapsedMilliseconds >= EXE_TIME)
         {
             stopwatch.Stop();
             gameObject.GetComponent<Renderer>().enabled = false;
