@@ -7,7 +7,7 @@ using UnityEngine;
 */
 public class CollisionDetection2 : MonoBehaviour
 {
-    public static int number_target = 0;//number of times the sphere collided with the cube
+    public int number_target = 0;//number of times the sphere collided with the cube
     //[SerializeField] is required to assign values in Unity
     [SerializeField] Transform[] points;//array of points filled in Unity
     [SerializeField] int index; //index initialized at 0 in Unity
