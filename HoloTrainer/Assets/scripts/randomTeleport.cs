@@ -12,7 +12,7 @@ public class FlashSphere : MonoBehaviour
     public Stopwatch stopwatch1; //measures execution time
     private const long DURATION = 3000L; //time between 2 teleports
     private const double MIN_X = 0, MAX_X = 1.5, MIN_Y = 1.3, MAX_Y = 2.2; //random ranges
-    public static bool entered = false;
+    public bool entered = false;
     private double min_x;
     private double min_y;
     private double max_x;
